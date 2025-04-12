@@ -1,0 +1,47 @@
+{
+  "name": "paste-and-apply-patch",
+  "displayName": "Paste and Apply Patch",
+  "description": "Applies a Unified Diff patch pasted by the user to current workspace.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:paste-and-apply-patch.showPatchInput"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "paste-and-apply-patch.showPatchInput",
+        "title": "Paste and Apply Patch (Show Input Panel)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "paste-and-apply-patch.showPatchInput",
+        "key": "ctrl+alt+p",
+        "mac": "cmd+alt+p"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.72.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.23.0"
+  },
+  "dependencies": {
+    "diff": "^7.0.0"
+  }
+}
