@@ -2,6 +2,7 @@
   "name": "paste-and-apply-patch",
   "displayName": "Paste and Apply Patch",
   "description": "Applies a Unified Diff patch pasted by the user to current workspace.",
+  "publisher": "NakadeHitsujiko",
   "version": "0.0.1",
   "repository": {
 	"type": "git",
