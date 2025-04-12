@@ -3,6 +3,10 @@
   "displayName": "Paste and Apply Patch",
   "description": "Applies a Unified Diff patch pasted by the user to current workspace.",
   "version": "0.0.1",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/sora8964/paste-and-apply-patch"
+  },
   "engines": {
     "vscode": "^1.72.0"
   },
